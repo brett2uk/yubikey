@@ -1,0 +1,30 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="general_category_pref"
+        app:title="@string/general">
+
+        <ListPreference
+            app:key="@string/default_slot_pref"
+            app:title="@string/default_slot"
+            app:summary="@string/default_slot_description"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="virtual_category_pref"
+        app:title="@string/virtualization">
+
+        <SwitchPreferenceCompat
+            app:key="@string/virtual_key_pref"
+            app:title="@string/virtual_key"
+            app:summary="@string/in_development"/>
+        <Preference
+            app:key="@string/recovery_key_pref"
+            app:enabled="false"
+            app:title="@string/recovery_key"
+            app:summary="@string/recovery_key_description"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
